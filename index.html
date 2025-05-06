@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Domine o marketing digital com ebooks estratégicos - Social Selling, SEO Centrado em UX e Mentalidade Empreendedora">
+    <title>Digital Masters | Ebooks Premium de Marketing Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #f59e0b;
+            --dark-color: #1e293b;
+            --light-bg: #f8fafc;
+            --text-color: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        .header {
+            background: var(--dark-color);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo i {
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--dark-color), var(--primary-color));
+            padding: 10rem 1rem 5rem;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .ebooks-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .ebook-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .ebook-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .ebook-image {
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            background: #f1f5f9;
+            padding: 1rem;
+        }
+
+        .price {
+            color: var(--secondary-color);
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 1.2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .price small {
+            font-size: 1rem;
+            color: #64748b;
+            text-decoration: line-through;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+            font-weight: 600;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        .badge {
+            background: #10b981;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .features {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #475569;
+        }
+
+        .features i {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .ebooks-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .testimonial-section {
+            background: white;
+            padding: 4rem 1rem;
+            margin: 3rem 0;
+        }
+
+        .guarantee-banner {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                Digital Masters
+            </div>
+            <div class="nav-links">
+                <a href="#ebooks" class="btn">Ver Ebooks</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Domine o Marketing Digital em 2025</h1>
+        <p>Ebooks estratégicos com metodologias validadas para alavancar seus resultados</p>
+    </section>
+
+    <div class="guarantee-banner">
+        <h2>✅ Garantia de 7 Dias</h2>
+        <p>Experimente sem risco: devolução garantida se não amar o conteúdo</p>
+    </div>
+
+    <main id="ebooks" class="ebooks-container"></main>
+
+    <section class="testimonial-section">
+        <div class="testimonial-container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 2rem;">O que dizem nossos leitores</h2>
+            <div style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <p>"O ebook de Social Commerce revolucionou nossa estratégia de vendas!"</p>
+                    <p style="margin-top: 1rem; font-weight: bold; color: var(--primary-color);">- Carla R., Empreendedora</p>
+                </div>
+                <div style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <p>"Conteúdo prático e atualizado que realmente gera resultados."</p>
+                    <p style="margin-top: 1rem; font-weight: bold; color: var(--primary-color);">- Pedro S., Marketer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const ebooks = [
+            {
+                title: "Social Selling & Commerce 2025: Venda Mais Usando o Poder das Redes Sociais!",
+                description: "Transforme seus seguidores em clientes fiéis e suas redes sociais em sua principal fonte de renda!",
+                price: "47,00",
+                originalPrice: "97,00",
+                image: "https://res.cloudinary.com/dt6fmumt7/image/upload/v1746575789/capa1_qcmyun.png",
+                features: [
+                    "Construção de marca pessoal",
+                    "Venda direta no Instagram/TikTok",
+                    "Ferramentas de automação",
+                    "Tendências 2025",
+                    "Modelos de conteúdo prontos"
+                ],
+                kiwifyLink: "#" // LINK KIWIFY EBOOK 1
+            },
+            {
+                title: "Conteúdo que Conecta, SEO que Converte: A Revolução da UX no Marketing Digital",
+                description: "Eleve seu marketing de conteúdo e SEO a um novo nível com o poder da Experiência do Usuário!",
+                price: "47,00",
+                originalPrice: "97,00",
+                image:"https://res.cloudinary.com/dt6fmumt7/image/upload/v1746575813/capa2_wfosvl.png",
+                features: [
+                    "SEO Humanizado",
+                    "Otimização Core Web Vitals",
+                    "Arquitetura da informação",
+                    "Métricas de engajamento",
+                    "Storytelling eficaz"
+                ],
+                kiwifyLink: "#" // LINK KIWIFY EBOOK 2
+            },
+            {
+                title: "Mindset de Sucesso no Digital: Resiliência e Produtividade para Empreendedores Imparáveis!",
+                description: "Desbloqueie seu potencial máximo e construa uma mentalidade de alta performance!",
+                price: "37,00",
+                originalPrice: "77,00",
+                image:"https://res.cloudinary.com/dt6fmumt7/image/upload/v1746575827/capa3_yrbkce.png",
+                features: [
+                    "Gestão de energia",
+                    "Combate ao burnout",
+                    "Hábitos de alta performance",
+                    "Gestão do tempo",
+                    "Mentalidade de crescimento"
+                ],
+                kiwifyLink: "#" // LINK KIWIFY EBOOK 3
+            }
+        ];
+
+        function renderEbooks() {
+            const container = document.querySelector('.ebooks-container');
+            
+            ebooks.forEach(ebook => {
+                const card = document.createElement('div');
+                card.className = 'ebook-card';
+                card.innerHTML = `
+                    <div class="badge">LANÇAMENTO</div>
+                    <img src="${ebook.image}" alt="${ebook.title}" class="ebook-image">
+                    <h3>${ebook.title}</h3>
+                    <p>${ebook.description}</p>
+                    <ul class="features">
+                        ${ebook.features.map(f => `<li><i class="fas fa-check-circle"></i>${f}</li>`).join('')}
+                    </ul>
+                    <div class="price">
+                        R$ ${ebook.price} <small>R$ ${ebook.originalPrice}</small>
+                    </div>
+                    <a href="${ebook.kiwifyLink}" class="btn" target="_blank">
+                        <i class="fas fa-shopping-cart"></i>
+                        Comprar Agora
+                    </a>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', renderEbooks);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
